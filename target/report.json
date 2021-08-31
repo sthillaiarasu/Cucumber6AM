@@ -1,0 +1,157 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9508000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "launch the browser and open Facebook URL",
+            "match": {
+              "location": "main.FBLogin.launch_the_browser_and_open_facebook_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-29T06:49:41.493Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3281000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "main.FBLogin.before()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Validate the facebook login with valid credentials",
+        "description": "",
+        "id": "facebook-login-validation;validate-the-facebook-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 673000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "main.FBLogin.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 163000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enter the username and password",
+            "match": {
+              "location": "main.FBLogin.enter_the_username_and_password(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password",
+                  "address",
+                  "phone",
+                  "mobile"
+                ]
+              },
+              {
+                "cells": [
+                  "thillai",
+                  "arasu",
+                  "hsajkfd",
+                  "fsdfsd",
+                  "sdfsd"
+                ]
+              },
+              {
+                "cells": [
+                  "jsdhasjd",
+                  "asdkassa",
+                  "jhasddjas",
+                  "jsadh",
+                  "jhds"
+                ]
+              },
+              {
+                "cells": [
+                  "jdksah",
+                  "ajdhsaj",
+                  "sjfhsd",
+                  "jhsd",
+                  "hfsdjkl"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "validate the login message",
+            "match": {
+              "location": "main.FBLogin.validate_the_login_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@run"
+          }
+        ]
+      }
+    ],
+    "name": "Facebook login validation",
+    "description": "",
+    "id": "facebook-login-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/FbLogin.feature",
+    "tags": [
+      {
+        "name": "@Smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@sanity",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      }
+    ]
+  }
+]
