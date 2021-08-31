@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features ="src\\test\\resources\\Features", glue = "main", 
-monochrome = true,dryRun = false, plugin = {"html:target/rep.html","json:target/report.json",
+monochrome = true,dryRun = false, plugin = {"html:target/rep.html",
 		"junit:target/repo.xml"},tags = "@run")
 public class testRunner {
 
